@@ -1,64 +1,80 @@
-/* This file contains the main styles for the website, including layout, typography, and colors. */
-
-/* Header Styles */
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-right nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.header-right nav ul {
-list-style: none;
-margin: 0;
-padding: 0;
-display: flex;
-}
-
-.header-right nav ul li {
-margin-left: 20px; /* Adjust spacing between menu items */
-}
-
-.header-right nav ul li a {
-text-decoration: none;
-color: #ffffff; /* Adjust text color as needed */
-font-weight: 720;
-}
-
-.header-right nav ul li a:hover {
-color: #f6e2f1;
-font-weight: 720; /* Adjust hover color as needed */
-transition: transform 0.6s ease; /* Adjust hover transition as needed */
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* SVG Styles */
-.header-left svg {
-    transition: transform 0.3s ease;
-    display: inline-block;
-}
-
-.header-left svg:hover {
-    transform: scale(0.9); /* Scales the SVG by 20% */
-}
-
-/* Body Styles */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
 body {
-    margin: 0;
+    background-color: #d7a9cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin: 50px;;
     font-family: "Assistant", serif;
     font-optical-sizing: auto;
     font-size: 15px;
     font-weight: 500;
     font-style: normal;
+}
+
+img {
+    width: 400px;
+    box-shadow: 0 0 10px 10px #e48fcf;
+    border-radius: 10px;
+}
+
+.button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #e48fcf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+.section {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #e48fcf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+    width: 600px;
+    text-align: center;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+.button:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+    transform 0.6s ease;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 1000;
+    font-style: normal;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #ffffff3b;
+    letter-spacing: 20px;
+    text-align: center;
+    line-height: 0.8;
+    display: inline-block;
+}
+
+.titlerepeater {
+    margin-top: 20px;
+}
+
+.buttonrepeater {
+    margin-top: 20px;
 }
