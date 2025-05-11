@@ -17,6 +17,9 @@ img {
     width: 400px;
     box-shadow: 0 0 10px 10px #e48fcf;
     border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: all 1s ease-in-out;
 }
 
 .pic:hover {
@@ -51,7 +54,7 @@ img {
     text-decoration: none;
     font-family: 'Assistant', sans-serif;
     font-size: 16px;
-    width: 600px;
+    width: 30%;
     text-align: center;
     line-height: 1.5;
     display: inline-block;
@@ -82,4 +85,47 @@ img {
 
 .buttonrepeater {
     margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 12px;
+    }
+    .section{
+        width:80%;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 601px) {
+    .section{
+        width: 80%;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 960px) {
+    .section{
+        width: 30%;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 1920px) {
+    .section{
+        width: 20%;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 2880px) {
+    .section{
+        width: 10%;
+        transition: all 0.3s ease-in-out;
+    }
 }
